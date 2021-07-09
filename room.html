@@ -19,6 +19,7 @@
         <title>Sala - rocket.q</title>
     </head>
     <body>
+
         <div id="room" class="content">
             <header>
                 <a href="#">
@@ -55,11 +56,11 @@
                 </section>
 
                 <section id="questions">
-                    <h2 class='sr-only'>Pergutnas dos usuarios</h2>
+                    <h2 class='sr-only'>Perguntas dos usuarios</h2>
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="images/avatar.svg" alt="Avatar">
+                                <img src="images/user.svg" alt="Avatar">
                             </div>
                             <div class="question">
                                 <p>Qual a diferença entre const, var e let no Javascript?</p>
@@ -76,9 +77,46 @@
                             </a>
                         </div>
                     </div>
+
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="images/user.svg" alt="Avatar">
+                            </div>
+                            <div class="question">
+                                <p>Qual a diferença entre const, var e let no Javascript?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="" classs="delete">
+                                <img src="images/trash.svg" alt="">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+
                 </section>
 
             </main>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2>Excluir</h2>
+                <p>Tem certeza que você deseja excluir esta pergunta?</p>
+
+                <form action="">
+                    <label for="password" class="sr-only">Digite sua senha admin</label>
+                    <input type="password" id="password" name="password" placehodler="Digite sua senha">
+                
+                    <div class="buttons">
+                        <div class="button">Cancelar</div>
+                        <button>Sim, excluir</button>
+                    </div>                    
+                </form>
+            </div>
+        </div>
 
     </body>
 </html>
