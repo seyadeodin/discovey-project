@@ -1,0 +1,30 @@
+{
+  "name": "discovery-project",
+  "version": "1.0.0",
+  "description": "Project developed to manage anoynmous questions of directiones users by the page owner. Developed during the NWL Rockseat - Mission Discovery",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon .",
+    "init-db": "node src/db/init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seyadeodin/discovey-project.git"
+  },
+  "keywords": [],
+  "author": "Lucas Andrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seyadeodin/discovey-project/issues"
+  },
+  "homepage": "https://github.com/seyadeodin/discovey-project#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
