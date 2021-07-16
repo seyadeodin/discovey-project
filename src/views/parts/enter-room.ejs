@@ -1,10 +1,10 @@
 <section>
     <h2>Entre como participante</h2>
-    <form action="post">
+    <form action="/enter-room" method="POST">
         <label class="sr-only" for="room-id">Código da sala</label>
         <!--. Label is tag used both to facilitate to search engines
         to localize our inputs and also for acessibility. -->
-        <input type="number" id="room-id" placeholder="Código da Sala">
+        <input type="number" name="room" id="room-id" placeholder="Código da Sala">
         <button>
             <img src="images/enter-room.svg" alt="Entrar na Sala">
             Entrar na sala
