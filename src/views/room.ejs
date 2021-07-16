@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,8 @@
     
         <!-- SCRIPTS -->
         <script src="/scripts/main.js" defer type ="module"></script>
+        <script src="/scripts/dark-mode.js" defer type ="module"></script>
+        
         <!-- defer type = "module" specify that our script use imports and exports -->
 
         <!-- Ctrl + / para comentar a linha -->
@@ -31,16 +33,18 @@
                     <img src="/images/logo.svg" alt="rocket.q Logo">
                 </a>
             
+                
                 <div class="buttons">
-                    <div class="button outlined" id="room-id" data-id="<%= roomId %>">
-                        #<%= roomId %>
-                        <img src="/images/copy.svg" alt="Copiar n">
-                    </div>
-                    <a href="/create-pass" class="button">
-                        <img src="/images/users-white.svg" alt="">
-                        Criar Sala
-                    </a>
+                <div class="button outlined" id="room-id" data-id="<%= roomId %>">
+                    #<%= roomId %>
+                    <img src="/images/copy.svg" alt="Copiar n">
                 </div>
+                <a href="/create-pass" class="button">
+                    <img src="/images/users-white.svg" alt="">
+                    Criar Sala
+                </a>
+            </div>
+            
             </header>
 
             <main>
@@ -121,7 +125,12 @@
                 </section>
 
             </main>
+            <div class="toggle">
+                <input name="theme" type="checkbox" id="switch" >
+                <label for="switch">Toggle</label>
+            </div>
         </div>
+
 
         <!-- MODAL -->
         <div class="modal-wrapper">

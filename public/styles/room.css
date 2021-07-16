@@ -12,6 +12,7 @@
 
 #room header .buttons{
     display: flex;
+    align-items: left;
 }
 
 #room header .buttons .button:nth-child(1){
@@ -165,4 +166,14 @@
 
     color: var(--grey-dark);
     
+}
+
+.toggle{
+    grid-area: headerR;
+    align-items: left;
+    position: relative;
+    margin-left: 90%;
+    margin-top: 10%;
+
+    z-index: 2;
 }

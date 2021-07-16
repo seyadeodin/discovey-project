@@ -49,3 +49,5 @@ function  handleClick(event, check = true){
 
 const cancelButton = document.querySelector('div.button.grey')
 cancelButton.addEventListener('click', event => Modal.close())
+
+

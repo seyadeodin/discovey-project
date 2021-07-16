@@ -4,12 +4,22 @@
     grid-template-rows: 11.4rem 1fr;
 
     grid-template-areas:
-    'header header'
-    'left right'
+    'headerL headerR'
+    'left right';
 }
 
 header{
-    grid-area: header;
+    grid-area: headerL;
+}
+
+.toggle{
+    grid-area: headerR;
+    align-items: left;
+    position: relative;
+    left: 75%;
+    top: 10%;
+
+    z-index: 2;
 }
 
 #bg{
